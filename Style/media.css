@@ -1,4 +1,22 @@
 @media (max-width:1320px) {
+    .intro__box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .intro__card:nth-child(2){
+        order: 1;
+        grid-column: span 2;
+        width: auto;
+    }
+    .intro__card{
+        gap: 10px;
+        padding-top: 50px;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .discount{
+        padding: 10px 15px;
+    }
+
     .nav {
         position: relative;
         padding: 10px 0;
@@ -50,6 +68,38 @@
 @media (max-width:1000px) {}
 
 @media (max-width:800px) {
+    .intro__box{
+        gap: 20px;
+    }
+    .discount{
+        font-size: 15px;
+        right: 20px;
+        left: auto;
+    }
+    .intro1{
+        width: 105px;
+        height: 130px;
+    }
+    .intro2{
+        width: 200px;
+        height: 150px;
+    }
+    .intro__textbox{
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro__card{
+        min-height: 200px;
+        padding-top: 0;
+    }
+    .intro__text{
+        font-size: 15px;
+    }
+    .intro__title{
+        font-size: 15px;
+        text-align: center;
+    }
     .nav__box {
         padding-bottom: 10px;
     }
@@ -90,9 +140,44 @@
     }
 }
 
-@media (max-width:600px) {}
+@media (max-width:600px) {
+    .discount{
+        top: 8px;
+        right: 8px;
+        padding: 5px 10px;
+    }
+    .intro1{
+        width: 50px;
+        height: 60px;
+    }
+    .intro2{
+        width: 100px;
+        height: 80px;  
+    }
+    .intro__text{
+        font-size: 12px;
+        text-align: center;
+    }
+    .intro__title{
+        font-size: 12px;
+    }
+    .intro__card{
+        gap: 5px;
+        padding: 4px;
+    }
+}
 
 @media (max-width:400px) {
+    .intro__card{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .discount{
+        font-size: 13px;
+    }
+    .intro__card:nth-child(2){
+        height: 180px;
+    }
     .nav__icons {
         gap: 6px;
     }
