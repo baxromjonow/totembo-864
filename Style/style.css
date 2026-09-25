@@ -1,0 +1,355 @@
+@import url(./font.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: unset;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(2px);
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --m700: "Montserrat-Bold";
+    --m400: "Montserrat-Regular";
+    --gray: #323232;
+}
+
+.nav {
+    padding: 50px 0 40px;
+}
+
+.nav__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--gray) 3px solid;
+    padding-bottom: 20px;
+}
+
+.nav__logo {
+    font-family: var(--m700);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: var(--gray);
+}
+
+.nav__list {
+    display: flex;
+    gap: 62px;
+}
+
+.nav__link {
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--gray);
+}
+
+.nav__icons {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.intro__box {
+    display: grid;
+    grid-template-columns: repeat(2, 526px);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 24px;
+}
+
+.intro__card {
+    background-color: #E1E1E1;
+    min-height: 294px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 24px;
+    padding-left: 60px;
+    box-shadow: 10px 10px 10px #d8d8d8;
+}
+
+.intro__card:nth-child(2) {
+    grid-row: span 2;
+    width: 746px;
+}
+
+.discount {
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    color: #fff;
+    background-color: var(--gray);
+    padding: 11px 38px;
+    border-radius: 10px;
+    position: absolute;
+    top: 16px;
+    left: 22px;
+}
+
+.intro__textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.intro__text {
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--gray);
+}
+
+.intro__title {
+    font-family: var(--m700);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    color: var(--gray);
+    text-transform: uppercase;
+    color: #000;
+}
+
+.seller {
+    padding: 60px 0;
+}
+
+.title {
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: var(--gray) 3px solid;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+
+.seller__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 24px;
+    row-gap: 40px;
+}
+
+.seller__card {
+    background-color: #E1E1E1;
+    box-shadow: 10px 10px 10px #d8d8d8;
+    border-radius: 10px;
+    width: 416px;
+    height: 485px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+}
+
+.shop,
+.like {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.shop {
+    top: 90px;
+}
+
+.seller__text {
+    text-align: center;
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    color: var(--gray);
+    margin-top: 60px;
+}
+
+.news {
+    padding-bottom: 60px;
+}
+
+.news__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.news__card {
+    height: 470px;
+    background-image: url(../Images/new1.png);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 64px;
+    gap: 50px;
+    position: relative;
+}
+
+.advice {
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--gray);
+    background-color: #fff;
+    padding: 13px 29px;
+    border-radius: 8px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.news__card:nth-child(2) {
+    background-image: url(../Images/new2.png);
+}
+
+.news__title {
+    font-family: var(--m700);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.news__text {
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E1E1E1;
+}
+
+.news__time {
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.news__time img {
+    transform: translateY(4px);
+}
+
+.footer {
+    background-color: var(--gray);
+    padding: 100px 0;
+}
+.footer__box {
+    display: flex;
+    gap: 160px;
+}
+.footer__card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer__logo {
+    font-family: var(--m700);
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+.footer__title {
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__link {
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+.footer__text a,
+.footer__text {
+    font-family: var(--m400);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #fff;
+}
+.mail {
+    text-transform: uppercase;
+}
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.social__imgs{
+    display: flex;
+    gap: 26px;
+}
+
+.menu img,
+.close img{
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
