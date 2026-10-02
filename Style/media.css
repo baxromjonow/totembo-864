@@ -9,6 +9,7 @@
         border-radius: 10px;
         background-position: right;
     }
+
     .intro__box {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -79,6 +80,18 @@
 }
 
 @media (max-width:1000px) {
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer__card {
+        gap: 15px;
+    }
+
+    .footer__box {
+        gap: 60px;
+    }
+
     .news__card {
         padding: 0 30px;
         gap: 20px;
@@ -97,6 +110,7 @@
     .news__text {
         font-size: 16px;
     }
+
     .seller__img {
         width: 150px;
         height: 190px;
@@ -119,27 +133,47 @@
 }
 
 @media (max-width:800px) {
-    .news__card{
+    .footer__logo {
+        font-size: 25px;
+    }
+
+    .footer__link {
+        font-size: 16px;
+    }
+
+    .footer__title {
+        font-size: 18px;
+    }
+
+    .footer__text {
+        font-size: 15px;
+    }
+
+    .news__card {
         height: 300px;
         align-items: center;
         padding: 10px;
         gap: 10px;
     }
-    .advice{
+
+    .advice {
         padding: 6px;
         top: 10px;
         left: 10px;
         font-size: 15px;
     }
-    .news__title{
+
+    .news__title {
         text-align: center;
         font-size: 16px;
     }
-    .news__text{
+
+    .news__text {
         font-size: 15px;
         line-height: 17px;
         text-align: center;
     }
+
     .seller__img {
         width: 100px;
         height: 120px;
@@ -256,22 +290,30 @@
 }
 
 @media (max-width:600px) {
-    .news__text{
+    .footer__box {
+        flex-wrap: wrap;
+    }
+
+    .news__text {
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
         overflow-y: scroll;
     }
-    .news__box{
+
+    .news__box {
         flex-direction: column;
     }
-    .news__card{
+
+    .news__card {
         height: 250px;
     }
-    .news__title{
+
+    .news__title {
         font-size: 15px;
     }
+
     .seller__text {
         font-size: 25px;
     }
@@ -312,6 +354,22 @@
 }
 
 @media (max-width:400px) {
+    .footer__logo {
+        font-size: 20px;
+    }
+
+    .footer__link {
+        font-size: 14px;
+    }
+
+    .footer__title {
+        font-size: 15px;
+    }
+
+    .footer__text {
+        font-size: 14px;
+    }
+    
     .title {
         font-size: 18px;
         margin-bottom: 10px;
