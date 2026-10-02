@@ -286,21 +286,25 @@ html {
     background-color: var(--gray);
     padding: 100px 0;
 }
+
 .footer__box {
     display: flex;
     gap: 160px;
 }
+
 .footer__card {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
+
 .footer__logo {
     font-family: var(--m700);
     font-weight: 700;
     font-size: 32px;
     color: #fff;
 }
+
 .footer__title {
     font-family: var(--m400);
     font-weight: 400;
@@ -309,6 +313,7 @@ html {
     text-transform: uppercase;
     color: #fff;
 }
+
 .footer__list {
     display: flex;
     flex-direction: column;
@@ -321,6 +326,7 @@ html {
     font-size: 18px;
     color: #fff;
 }
+
 .footer__text a,
 .footer__text {
     font-family: var(--m400);
@@ -329,26 +335,29 @@ html {
     line-height: 100%;
     color: #fff;
 }
+
 .mail {
     text-transform: uppercase;
 }
+
 .footer__social {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.social__imgs{
+
+.social__imgs {
     display: flex;
     gap: 26px;
 }
 
 .menu img,
-.close img{
+.close img {
     width: 25px;
     height: 25px;
     display: none;
 }
 
-#check{
+#check {
     display: none;
 }
